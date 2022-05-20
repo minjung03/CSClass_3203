@@ -10,6 +10,7 @@ namespace Csclass_3203
     {
         static void Main(string[] args)
         {
+            // 클래스 개요, 사용 예제 
             Car car = new Car();
             // 객체를 먼저 선언한 후, 오류나는 곳에 Alt+Enter -> 새 형식으로 class 만들기 클릭
 
@@ -55,8 +56,18 @@ namespace Csclass_3203
             Console.WriteLine(Math.PI);
 
 
-            // 클래스 생성 파트
+            // 클래스 생성 예제
             Hamburger nyam = new Hamburger(); // 파일 이름이 food.cs이지만 오류나지 않음
+
+            // 클래스 변수 예제
+            Product productA = new Product();
+            productA.name = "포켓몬빵";
+            productA.price = 1500;
+
+            /* 인스턴스 변수를 생성과 동시에 초기화 (C#의 고유 문법) */
+            Product productB = new Product() { name = "소금빵", price = 2000 };
+            Product productC = new Product() { price = 3000, name = "바게트"}; // { }에서 작성하는 것은 순서 바뀌어도 상관 X
+            Product productD = new Product() { name = "구름빵" };
         }
     }
 }
