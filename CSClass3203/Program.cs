@@ -54,6 +54,9 @@ namespace Csclass_3203
             Console.WriteLine(Math.Round(52.273));   // 반올림
             Console.WriteLine(Math.PI);
 
+
+            // 클래스 생성 파트
+            Hamburger nyam = new Hamburger(); // 파일 이름이 food.cs이지만 오류나지 않음
         }
     }
 }
