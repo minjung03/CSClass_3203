@@ -53,7 +53,7 @@ namespace Csclass_3203
             Console.WriteLine(Math.Max(52, 273)); 
             Console.WriteLine(Math.Min(52, 273));
             Console.WriteLine(Math.Round(52.273));   // 반올림
-            Console.WriteLine(Math.PI);
+            Console.WriteLine(Math.PI+"\n");
 
 
             // 클래스 생성 예제
@@ -68,6 +68,40 @@ namespace Csclass_3203
             Product productB = new Product() { name = "소금빵", price = 2000 };
             Product productC = new Product() { price = 3000, name = "바게트"}; // { }에서 작성하는 것은 순서 바뀌어도 상관 X
             Product productD = new Product() { name = "구름빵" };
+
+
+            /*
+            List<Student> students = new List<Student>();
+            students.Add(new Student() { name = "김민정", grade = 3 });
+            students.Add(new Student() { name = "이미림", grade = 2 });
+            students.Add(new Student() { name = "나미림", grade = 1 });
+            students.Add(new Student() { name = "유민진", grade = 3 });
+            students.Add(new Student() { name = "김태은", grade = 2 });
+            students.Add(new Student() { name = "이광수", grade = 1 });
+            */
+
+            List<Student> students = new List<Student>()
+            {
+            new Student() { name = "김민정", grade = 3 },
+            new Student() { name = "이미림", grade = 2 },
+            new Student() { name = "나미림", grade = 1 },
+            new Student() { name = "유민진", grade = 3 },
+            new Student() { name = "김태은", grade = 2 },
+            new Student() { grade = 1, name = "이광수" }
+            };
+
+            for(int i = students.Count -1; i >= 0; i--)
+            {
+                if (students[i].grade > 2)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+
+            foreach (var item in students)
+            {
+                Console.WriteLine(item.name+" : "+item.grade);
+            }
         }
     }
 }
