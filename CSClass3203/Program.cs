@@ -102,6 +102,10 @@ namespace Csclass_3203
             {
                 Console.WriteLine(item.name+" : "+item.grade);
             }
+
+
+            Method method = new Method();
+            Console.WriteLine("\n" + method.Multi(52.1, 273));
         }
     }
 }
