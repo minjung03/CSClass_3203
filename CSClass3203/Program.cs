@@ -106,6 +106,8 @@ namespace Csclass_3203
 
             Method method = new Method();
             Console.WriteLine("\n" + method.Multi(52.1, 273));
+            Console.WriteLine(method.Sum(1, 100));
+            Console.WriteLine(method.Multiply(1, 10));
         }
-    }
+    }  
 }
