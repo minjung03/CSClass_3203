@@ -108,6 +108,8 @@ namespace Csclass_3203
             Console.WriteLine("\n" + method.Multi(52.1, 273));
             Console.WriteLine(method.Sum(1, 100));
             Console.WriteLine(method.Multiply(1, 10));
+            Console.WriteLine(Method.Abs(100));
+            // Console.WriteLine(method.Abs(100)); - 불가능 (Java는 가능)
         }
     }  
 }

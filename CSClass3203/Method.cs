@@ -4,6 +4,8 @@ namespace Csclass_3203
 {
     public class Method
     {
+        int instanceVariable = 10;
+        static int classVariable = 10;
         public double Multi(double v1, int v2)
         {
             return v1 * v2;
@@ -26,7 +28,6 @@ namespace Csclass_3203
             return output;
         }
 
-
         /// <summary>
         /// min부터 max까지의 곱
         /// </summary>
@@ -43,6 +44,25 @@ namespace Csclass_3203
             }
 
             return output;
+        }
+
+        static public void some()
+        {
+            // Multiply(1, 10); - 오류 
+            // Console.WriteLine(instanceVariable); - 오류
+            Console.WriteLine(classVariable);
+        }
+
+        public static int Abs(int input)
+        {
+            if(input < 0)
+            {
+                return -input;
+            }
+            else
+            {
+                return input;
+            }
         }
     }
 }
