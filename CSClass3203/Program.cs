@@ -108,7 +108,7 @@ namespace Csclass_3203
             Console.WriteLine("\n" + method.Multi(52.1, 273));
             Console.WriteLine(method.Sum(1, 100));
             Console.WriteLine(method.Multiply(1, 10));
-            Console.WriteLine(Method.Abs(100));
+            Console.WriteLine(Method.Abs(100)+"\n");
             // Console.WriteLine(method.Abs(100)); - 불가능 (Java는 가능)
 
 
@@ -124,6 +124,28 @@ namespace Csclass_3203
             // long
             Console.WriteLine(MyMath.Abs(2223456789L));
             Console.WriteLine(MyMath.Abs(-2223456789));
+            Console.WriteLine();
+
+
+            // 생성자
+            Product p1 = new Product("감자", 3000);
+            Product p2 = new Product("고구마", 5000);
+            Console.WriteLine(Product.counter + "개 생성되었습니다\n");
+
+            // 정적 생성자
+            /*
+            Console.WriteLine("첫번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("두번째 위치");
+            Sample sample = new Sample();
+            Console.WriteLine("세번째 위치");
+            */
+           
+            Console.WriteLine("첫번째 위치");
+            Sample sample = new Sample();
+            Console.WriteLine("두번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("세번째 위치");
         }
     }  
 }
