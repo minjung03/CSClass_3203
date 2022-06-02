@@ -110,6 +110,20 @@ namespace Csclass_3203
             Console.WriteLine(method.Multiply(1, 10));
             Console.WriteLine(Method.Abs(100));
             // Console.WriteLine(method.Abs(100)); - 불가능 (Java는 가능)
+
+
+            // Method Overloding
+            // int
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-52));
+
+            // double
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(-52.273));
+
+            // long
+            Console.WriteLine(MyMath.Abs(2223456789L));
+            Console.WriteLine(MyMath.Abs(-2223456789));
         }
     }  
 }
