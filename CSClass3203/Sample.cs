@@ -16,5 +16,10 @@ namespace Csclass_3203
         {
             Console.WriteLine("Sample() 일반 생성자 호출");
         }
+
+        ~Sample()
+        {
+            Console.WriteLine("Sample() 소멸자 호출");
+        }
     }
 }
