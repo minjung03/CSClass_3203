@@ -8,6 +8,8 @@ namespace Csclass_3203
 {
     internal class Program
     {
+        private static object box;
+
         static void Main(string[] args)
         {
             // 클래스 개요, 사용 예제 
@@ -138,14 +140,31 @@ namespace Csclass_3203
             Console.WriteLine(Sample.value);
             Console.WriteLine("두번째 위치");
             Sample sample = new Sample();
-            Console.WriteLine("세번째 위치");
+            Console.WriteLine("세번째 위치\n");
             */
            
             Console.WriteLine("첫번째 위치");
             Sample sample = new Sample();
             Console.WriteLine("두번째 위치");
             Console.WriteLine(Sample.value);
-            Console.WriteLine("세번째 위치");
+            Console.WriteLine("세번째 위치\n");
+
+
+            // 속성
+            Box1 box1 = new Box1(10, 10); // public 변수 형식
+            box1.width = -10;
+            Console.WriteLine("box1의 면적은 " + box1.Area());
+
+            Box2 box2 = new Box2(10, 10); // Java 형식
+            box2.setWidth(10);
+            Console.WriteLine("box2의 면적은 " + box2.Area());
+
+            Box box = new Box(10, 10);
+            box.Width = -10;
+            Console.WriteLine("box의 면적은 " + box.Area+"\n"); // 메서드에 () 작성하지 않음
+
+
+
         }
     }  
 }
