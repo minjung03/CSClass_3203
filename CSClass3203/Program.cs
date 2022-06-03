@@ -161,7 +161,13 @@ namespace Csclass_3203
 
             Box box = new Box(10, 10);
             box.Width = -10;
-            Console.WriteLine("box의 면적은 " + box.Area+"\n"); // 메서드에 () 작성하지 않음
+            Console.WriteLine("box의 면적은" + box.Area+"\n"); // 메서드에 () 작성하지 않음
+
+
+            // 재귀 메서드(피보나치) 
+            Console.WriteLine(Fibonacci.Get(1));
+            Console.WriteLine(Fibonacci.Get(10));
+            Console.WriteLine(Fibonacci.Get(100));
 
 
 

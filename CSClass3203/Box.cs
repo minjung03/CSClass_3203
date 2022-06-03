@@ -13,7 +13,8 @@ namespace Csclass_3203
                 else Console.WriteLine("양수를 입력해주세요");
             }
         }
-
+       
+ 
         private int height;
         public int Height
         {
