@@ -170,20 +170,34 @@ namespace Csclass_3203
             Console.WriteLine(Fibonacci.Get(100));
 
             // 상속과 다형성 소개
-            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
-            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
+            /*
+             List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
+             List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
 
-            foreach(var item in Dogs)
+              foreach(var item in Dogs)
+              {
+                  item.Eat();
+                  item.Sleep();
+                  item.Bark();
+              }
+              foreach (var item in Cats)
+              {
+                  item.Eat();
+                  item.Sleep();
+                  item.Meow();
+              }
+              */
+            List<Animal> animals = new List<Animal>() {
+                new Dog(), new Dog(), new Dog(),
+                new Cat(), new Cat(), new Cat()
+            };
+
+            foreach(var item in animals)
             {
                 item.Eat();
                 item.Sleep();
-                item.Bark();
-            }
-            foreach (var item in Cats)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Meow();
+                // item.Bark();
+                // ((Dog)item).Bark();
             }
 
         }
