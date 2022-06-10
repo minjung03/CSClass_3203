@@ -169,7 +169,7 @@ namespace Csclass_3203
             Console.WriteLine(Fibonacci.Get(10));
             Console.WriteLine(Fibonacci.Get(100));
 
-
+            // 상속과 다형성 소개
             List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
             List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
 
