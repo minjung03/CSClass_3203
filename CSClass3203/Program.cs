@@ -196,8 +196,16 @@ namespace Csclass_3203
             {
                 item.Eat();
                 item.Sleep();
-                // item.Bark();
-                // ((Dog)item).Bark();
+
+                if(item is Dog)
+                {
+                    // item.Bark(); 이런거 안됨! (시험내기 좋다..)
+                    ((Dog)item).Bark();
+                }
+                else
+                {
+                    ((Cat)item).Meow();
+                }
             }
 
         }
