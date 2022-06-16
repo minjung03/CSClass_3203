@@ -220,6 +220,20 @@ namespace Csclass_3203
                 if (cat != null) { cat.Meow(); }
             }
 
+
+            Parent parent = new Parent();
+            Child child = new Child();
+            parent.CountParent();
+
+            child.CountChild();
+            Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
+
+            parent.CountParent();
+            Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
+
+            child.CountParent();
+            Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
+
         }
     }  
 }
