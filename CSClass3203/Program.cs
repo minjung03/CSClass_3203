@@ -244,8 +244,16 @@ namespace Csclass_3203
             Child c = new Child();
             Console.WriteLine(c.variable);
             Console.WriteLine(((Parent)child).variable);
+            
             c.Method();
             ((Parent)c).Method();
+            c.Method2();
+            ((Parent)c).Method2();
+
+            foreach(var item in animals)
+            {
+                item.Eat();
+            }
 
         }
     }  

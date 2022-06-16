@@ -11,5 +11,9 @@ namespace Csclass_3203
             base.Eat();
             Console.WriteLine("Dog Bark"); ;
         }
+        public override void Eat()
+        {
+            Console.WriteLine("사료 먹음");
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Csclass_3203
             this.Age = 0;
         }
 
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("Eat");
         }

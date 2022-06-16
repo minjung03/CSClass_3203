@@ -12,6 +12,11 @@ namespace Csclass_3203
         {
             Console.WriteLine("부모의 메서드");
         }
+
+        public virtual void Method2()
+        {
+            Console.WriteLine("자식의 메서드");
+        }
             
         public void CountParent()
         {
