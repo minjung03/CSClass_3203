@@ -3,6 +3,13 @@ namespace Csclass_3203
 {
     public class Child : Parent
     {
+        public string variable = "hiding";
+
+        public void Method()
+        {
+            Console.WriteLine("자식의 메서드");
+        }
+
         public Child() : base()
         {
             Console.WriteLine("자식 생성자");

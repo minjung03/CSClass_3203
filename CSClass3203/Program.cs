@@ -8,6 +8,8 @@ namespace Csclass_3203
 {
     internal class Program
     {
+        public static int number = 0;
+
         private static object box;
 
         static void Main(string[] args)
@@ -232,7 +234,18 @@ namespace Csclass_3203
             Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
 
             child.CountParent();
-            Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
+            Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter+"\n");
+
+            // 섀도잉
+            int number = 20;
+            Console.WriteLine(number);
+
+            // 하이딩
+            Child c = new Child();
+            Console.WriteLine(c.variable);
+            Console.WriteLine(((Parent)child).variable);
+            c.Method();
+            ((Parent)c).Method();
 
         }
     }  
